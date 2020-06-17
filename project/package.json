@@ -6,11 +6,18 @@
   "scripts": {
     "build:sample_demo_single": "webpack --config sample_demo/webpack.config.js",
     "build:sample_demo_muti": "webpack --config sample_demo/webpack.muti.config.js",
+    "build:case01_demo": "webpack --config case01_demo/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "less-loader": "^6.1.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
