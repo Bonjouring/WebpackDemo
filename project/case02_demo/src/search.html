@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 引入内联 html 的 meta 部分 -->
+    <!-- 由于使用的是 html-webpack-plugin,所以其默认的模板引擎是 EJS，所以可以直接使用 ${} -->
+    <%= require('raw-loader!./meta.html') %>
+    <title>Document</title>
+    <!-- 引入 内联JS -->
+    <script><%= require('raw-loader!babel-loader!../../node_modules/lib-flexible/flexible.js') %></script>
+    <script type="text/javascript">
+    // copy lib-flexible
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

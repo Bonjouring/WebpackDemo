@@ -16,3 +16,14 @@
     - less-loader 用于将 less 转换成 css
     - webpack 配置：[alt webpack 示例](../images/case01_d.png) 
     - npm 安装: less-loader
+
+**解析图片和字体**
+> + ***解析图片/字体*** 
+    - file-loader 用于处理文件资源
+    - webpack 配置：[alt webpack 示例](../images/case01_图片.png)
+    - npm 安装: file-loader
+> + ***资源解析*** 
+    - 除了 file-loader 可以解析各种文件外，还可以使用 url-loader
+    - url-loader 也可以处理图片和字体，可以设置较小资源自动 base64
+    - webpack 配置：[alt webpack 示例](../images/case01_urlLoader.png)
+    - npm 安装: url-loader
